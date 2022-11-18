@@ -1,0 +1,44 @@
+:root {
+    --primary: #2D83FE;
+    --secondary: #0A0D0D;
+    --pure: white;
+    --dark: black;
+}
+
+body{
+    background-color: var(--secondary);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    font-size: x-large;
+    font-weight: bold;
+    background-color: var(--primary);
+    line-height: 100px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.entrance{
+    text-align: center;
+}
+
+button{
+    display: inline-block;
+    font-size: x-large;
+    margin-top: 300px;
+    background: var(--primary);
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+button:hover{   
+    background: var(--secondary);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    cursor: pointer;
+} 
