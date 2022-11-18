@@ -16,39 +16,32 @@ $db="student management system";
 
 $data=mysqli_connect($host,$user,$password,$db);
 
-if(isset($_POST['add_student'])){
-    $user_name=$_POST['name'];
-    $user_email=$_POST['email'];
-    $user_phone=$_POST['phone'];
-    $user_password=$_POST['password'];
-    $user_type="student";
+if(isset($_POST['add_teacher'])){
+    $t_name=$_POST['name'];
+    $t_email=$_POST['email'];
+    $t_phone=$_POST['phone'];
+    $t_password=$_POST['password'];
+    $t_department=$_POST['department'];
+    $file=$_FILES['image']['name'];
+    $dst="./Teacher_image/".$file;
+    $dst_db="image/".$file;
 
-    $check="SELECT * FROM users WHERE Username='$user_name'";
+    move_uploaded_file($_FILES['image']['tmp_name'], $dst);
 
-    $check_user=mysqli_query($data,$check);
+    $sql="INSERT INTO teachers(Name,Email,Phone,Password,Department,Image) VALUES ('$t_name','$t_email','$t_phone','$t_password','$t_department','$dst_db')";
 
-    $row_count=mysqli_num_rows($check_user);
+    $result=mysqli_query($data,$sql);
 
-    if($row_count){
+    if($result){
         echo "<script type='text/javascript'>
-        alert('Username Already Exists!');
+        alert('Data Upload Successful!');
         </script>";
     }
     else{
-        $sql="INSERT INTO users(Username,Email,Phone,Usertype,Password) VALUES ('$user_name','$user_email','$user_phone','$user_type','$user_password')";
-
-        $result=mysqli_query($data,$sql);
-
-        if($result){
-            echo "<script type='text/javascript'>
-            alert('Data Upload Successful!');
-            </script>";
-        }
-        else{
-            echo "Upload Failed!";
-        }
+        echo "Upload Failed!";
     }
 }
+
 
 
 
@@ -72,7 +65,7 @@ if(isset($_POST['add_student'])){
             <h1>Add Teachers</h1>
             <br>
             <div>
-            <form action="#" method="POST">
+            <form action="#" method="POST" enctype="multipart/form-data">
                 <div>
                     <label>Teacher Name:</label>
                     <input type="text" placeholder="Enter name" name="name">  
