@@ -86,10 +86,10 @@ if(isset($_POST['add_teacher'])){
                     <label>Department:</label>
                     <input type="text" placeholder="Enter Department" name="department">  
                 </div>
-                <div>
+                <!--div>
                     <label>Image:</label>
                     <input type="file" name="image">  
-                </div>
+                </div-->
                 <br>
                 <center>
                 <a href=""><input type="submit" name="add_teacher" value="Add Teacher"></a>

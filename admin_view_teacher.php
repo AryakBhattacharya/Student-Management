@@ -58,7 +58,7 @@ if($_GET['teacher_id']){
                     <th>Phone</th>
                     <th>Password</th>
                     <th>Department</th>
-                    <th>Image</th>
+                    <!--th>Image</th-->
                     <th>Delete</th>
                     <th>Update</th>
                 </tr>
@@ -75,9 +75,9 @@ if($_GET['teacher_id']){
                     <td><?php echo "{$info['Phone']}" ?></td>
                     <td><?php echo "{$info['Password']}" ?></td>
                     <td><?php echo "{$info['Department']}" ?></td>
-                    <td><img src="<?php echo "{$info['Image']}" ?>"></td>
+                    <!--td><img src="<?php echo "{$info['Image']}" ?>"></td-->
                     <td><?php echo "<a onClick=\"javascript:return confirm('Are You Sure?')\" href='admin_view_teacher.php?teacher_id={$info['id']}'>Delete</a>" ?></td>
-                    <td><?php echo "<a href='update_student.php?student_id={$info['id']}'>Update</a>" ?></td>
+                    <td><?php echo "<a href='admin_update_teacher.php?teacher_id={$info['id']}'>Update</a>" ?></td>
                 </tr>
 
                 <?php
