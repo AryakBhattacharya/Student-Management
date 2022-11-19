@@ -27,7 +27,7 @@ $result=mysqli_query($data,$sql);
     <head>
         <meta charset="utf-8">
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="view_teacher.css">
+        <link rel="stylesheet" type="text/css" href="admin_view_teacher.css">
     </head>
     <body>
 
@@ -57,14 +57,14 @@ $result=mysqli_query($data,$sql);
                 ?>
 
                 <tr>
-                    <td><?php echo "{$info['Name']}"; ?></td>
-                    <td><?php echo "{$info['Email']}"; ?></td>
-                    <td><?php echo "{$info['Phone']}"; ?></td>
-                    <td><?php echo "{$info['Password']}"; ?></td>
-                    <td><?php echo "{$info['Department']}"; ?></td>
-                    <td><?php echo "{$info['Image']}"; ?></td>
-                    <td><?php echo "<a onClick=\"javascript:return confirm('Are You Sure?')\" href='delete.php?student_id={$info['id']}'>Delete</a>"; ?></td>
-                    <td><?php echo "<a href='update_student.php?student_id={$info['id']}'>Update</a>"; ?></td>
+                    <td><?php echo "{$info['Name']}" ?></td>
+                    <td><?php echo "{$info['Email']}" ?></td>
+                    <td><?php echo "{$info['Phone']}" ?></td>
+                    <td><?php echo "{$info['Password']}" ?></td>
+                    <td><?php echo "{$info['Department']}" ?></td>
+                    <td><img src="<?php echo "{$info['Image']}" ?>"></td>
+                    <td><?php echo "<a onClick=\"javascript:return confirm('Are You Sure?')\" href='delete.php?student_id={$info['id']}'>Delete</a>" ?></td>
+                    <td><?php echo "<a href='update_student.php?student_id={$info['id']}'>Update</a>" ?></td>
                 </tr>
 
                 <?php

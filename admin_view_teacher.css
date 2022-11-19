@@ -1,6 +1,6 @@
 :root {
     --primary: #2D83FE;
-    --secondary: #0A0D0D;
+    --secondary: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
     --pure: white;
     --dark: black;
 }
@@ -121,4 +121,9 @@ table a:hover{
     padding: 2px 5px;
     border-radius: 10%;
     color: var(--primary);
+}
+
+img{
+    height: 100px;
+    width: 100px;
 }
