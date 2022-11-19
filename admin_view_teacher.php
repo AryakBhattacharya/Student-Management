@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+error_reporting(0);
 
 if(!isset($_SESSION['username'])){
     header("location:log_in.php");
@@ -18,6 +19,18 @@ $data=mysqli_connect($host,$user,$password,$db);
 $sql="SELECT * from teachers";
 
 $result=mysqli_query($data,$sql);
+
+if($_GET['teacher_id']){
+    $t_id=$_GET['teacher_id'];
+    $sql2="DELETE FROM teachers WHERE id='$t_id' ";
+
+    $result2=mysqli_query($data,$sql2);
+
+    if($result){
+        header("location:admin_view_teacher.php");
+    }
+}
+
 
 ?>
 
@@ -63,7 +76,7 @@ $result=mysqli_query($data,$sql);
                     <td><?php echo "{$info['Password']}" ?></td>
                     <td><?php echo "{$info['Department']}" ?></td>
                     <td><img src="<?php echo "{$info['Image']}" ?>"></td>
-                    <td><?php echo "<a onClick=\"javascript:return confirm('Are You Sure?')\" href='delete.php?student_id={$info['id']}'>Delete</a>" ?></td>
+                    <td><?php echo "<a onClick=\"javascript:return confirm('Are You Sure?')\" href='admin_view_teacher.php?teacher_id={$info['id']}'>Delete</a>" ?></td>
                     <td><?php echo "<a href='update_student.php?student_id={$info['id']}'>Update</a>" ?></td>
                 </tr>
 
