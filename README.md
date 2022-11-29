@@ -18,7 +18,7 @@ Steps To Run The Project:
 
 2.Open XAMP ad start Apache and MySQL
 
-3.Open your browser and go to "http://localhost/Student%20Management/index.php" and proceed as your liking
+3.Open your browser and go to "http://localhost/Student%20Management/PHP/index.php" and proceed as your liking
 
 */index.php is the starting page of the project.
 
