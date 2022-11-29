@@ -7,8 +7,8 @@
         <aside>
         <ul>
                 <li><a href="student_profile.php">My Profile</a></li>
-                <li><a href="">My Courses</a></li>
-                <li><a href="">My Result</a></li>
+                <li><a href="to_be_added_student.php">My Courses</a></li>
+                <li><a href="to_be_added_student.php">My Result</a></li>
                 <!--li><a href="">View Students</a></li>
                 <li><a href="">View Teachers</a></li>
                 <li><a href="">Add Courses</a></li>
