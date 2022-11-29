@@ -41,8 +41,14 @@ if(isset($_POST['update'])){
 
     move_uploaded_file($_FILES['image']['tmp_name'], $dst);
 
-    $query="UPDATE teachers SET Name='$name',Email='$email',Phone='$phone',Department='$department',Password='$password',Image='$dst_db' WHERE id='$t_id'";
+    if($file){
+        $query="UPDATE teachers SET Name='$name',Email='$email',Phone='$phone',Department='$department',Password='$password',Image='$dst_db' WHERE id='$t_id'";
+    }
+    else{
+        $query="UPDATE teachers SET Name='$name',Email='$email',Phone='$phone',Department='$department',Password='$password' WHERE id='$t_id'";
+    }
 
+    
     $result2=mysqli_query($data,$query);
 
     if($result2){
@@ -70,7 +76,7 @@ if(isset($_POST['update'])){
             <h1>Update Teacher Info</h1>
             <br>
             <div>
-                <form action="#" method="POST">
+                <form action="#" method="POST" enctype="multipart/form-data">
                     <div>
                         <label>Name:</label>
                          <input type="text" name="name" value="<?php echo "{$info['Name']}";?>">  
