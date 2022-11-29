@@ -48,7 +48,7 @@ if(isset($_POST['update'])){
     <head>
         <meta charset="utf-8">
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="update_student.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/update_student.css">
     </head>
     <body>
 

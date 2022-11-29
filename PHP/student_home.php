@@ -17,7 +17,7 @@ elseif($_SESSION['Usertype']=='admin'){
     <head>
         <meta charset="utf-8">
         <title>Student Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="student_home.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/student_home.css">
     <body>
         
         <?php

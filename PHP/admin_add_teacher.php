@@ -54,7 +54,7 @@ if(isset($_POST['add_teacher'])){
     <head>
         <meta charset="utf-8">
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="admin_add_teacher.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/admin_add_teacher.css">
     </head>
     <body>
 

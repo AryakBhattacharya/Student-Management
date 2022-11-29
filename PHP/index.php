@@ -20,7 +20,7 @@ if($_SESSION['message']){
     <head>
         <metacharset="utf-8">
         <title>Student Management System</title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="../CSS/index.css">
     </head>
     <body>
         <header class="header">

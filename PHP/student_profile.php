@@ -51,7 +51,7 @@ if(isset($_POST['update'])){
     <head>
         <meta charset="utf-8">
         <title>Student Profile</title>
-        <link rel="stylesheet" type="text/css" href="student_profile.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/student_profile.css">
     <body>
         
         <?php

@@ -60,7 +60,7 @@ if(isset($_POST['add_student'])){
     <head>
         <meta charset="utf-8">
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="add_student.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/add_student.css">
     </head>
     <body>
 

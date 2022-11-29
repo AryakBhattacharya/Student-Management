@@ -40,7 +40,7 @@ if($_GET['teacher_id']){
     <head>
         <meta charset="utf-8">
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="admin_view_teacher.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/admin_view_teacher.css">
     </head>
     <body>
 

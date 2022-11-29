@@ -27,7 +27,7 @@ $result=mysqli_query($data,$sql);
     <head>
         <meta charset="utf-8">
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="admin_admission.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/admin_admission.css">
     </head>
     <body>
 
