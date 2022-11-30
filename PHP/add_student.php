@@ -96,5 +96,8 @@ if(isset($_POST['add_student'])){
                 </form>
             </div>
         </div>
+        <div class="footer">
+            &copy Developed by <b>Aryak Bhattacharya</b>. All Rights Reserved.
+        </div>
     </body>
 </html>

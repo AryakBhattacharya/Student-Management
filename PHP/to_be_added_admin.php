@@ -28,5 +28,8 @@ elseif($_SESSION['Usertype']=='student'){
         <div class="content">
             <h1>To Be Added</h1>
         </div>
+        <div class="footer">
+            &copy Developed by <b>Aryak Bhattacharya</b>. All Rights Reserved.
+        </div>
     </body>
 </html>

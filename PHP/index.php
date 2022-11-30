@@ -30,5 +30,8 @@ if($_SESSION['message']){
             <a href="register.php"><button type="submit">Register</button></a>
             <a href="log_in.php"><button type="submit">log in</button></a>
         </div>
+        <div class="footer">
+            &copy Developed by <b>Aryak Bhattacharya</b>. All Rights Reserved.
+        </div>
     </body>
 </html>

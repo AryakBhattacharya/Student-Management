@@ -71,5 +71,8 @@ $result=mysqli_query($data,$sql);
 
             </table>
         </div>
+        <div class="footer">
+            &copy Developed by <b>Aryak Bhattacharya</b>. All Rights Reserved.
+        </div>
     </body>
 </html> 

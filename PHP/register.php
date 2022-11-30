@@ -40,5 +40,8 @@
             <button type="submit" name="submit">Submit</button>
         </div>
     </form>
+    <div class="footer">
+        &copy Developed by <b>Aryak Bhattacharya</b>. All Rights Reserved.
+    </div>
 </body>
 </html>

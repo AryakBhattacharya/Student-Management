@@ -86,3 +86,14 @@ ul li a:hover{
 .content h1{
     text-align: left;
 }
+
+.footer{
+    position: fixed;
+    color: var(--pure);
+    bottom: 0%;
+    width: 100%;
+    background-color: black;
+    line-height: 3;
+    text-align: center;
+    left: 0;
+}

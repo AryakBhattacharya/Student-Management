@@ -88,5 +88,8 @@ if($_GET['teacher_id']){
 
             </table>
         </div>
+        <div class="footer">
+            &copy Developed by <b>Aryak Bhattacharya</b>. All Rights Reserved.
+        </div>
     </body>
 </html> 

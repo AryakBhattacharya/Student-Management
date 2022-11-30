@@ -80,3 +80,14 @@ ul li a:hover{
     margin-left: 20%;
     margin-top: 5%;
 }
+
+.footer{
+    position: fixed;
+    color: var(--pure);
+    bottom: 0%;
+    width: 100%;
+    background-color: black;
+    line-height: 3;
+    text-align: center;
+    left: 0;
+}
